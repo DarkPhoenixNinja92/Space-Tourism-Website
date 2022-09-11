@@ -1,0 +1,11 @@
+.navitm {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
