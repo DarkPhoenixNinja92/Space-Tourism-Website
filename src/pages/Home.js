@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './Home.css'
 
 const Home = () => {
@@ -13,9 +14,11 @@ const Home = () => {
   <div className='explore-outer hide'>
     bob
   </div>
+  <Link to='/destination'>
   <div className='explore'>
     <h2>Explore</h2>
   </div>
+  </Link>
     </div>
     );
   }
