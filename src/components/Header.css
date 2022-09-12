@@ -10,11 +10,13 @@
     justify-content: space-evenly;
     z-index: 4000;
     color: #fff;
+    background-color: #979797;
 }
 
 .menu-itm {
     position: relative;
     left: 32vw;
+    bottom: 1.5em;
 }
 
 img {
@@ -25,5 +27,13 @@ img {
 .icon {
     position: relative;
     right: 45vw;
-    top: 2vw;
+    top: 4em;
+}
+
+.current {
+    position: relative;
+    top: 0.3em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+    line-height: 48px;
 }

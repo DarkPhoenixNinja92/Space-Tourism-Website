@@ -9,10 +9,10 @@ const Header = () => {
                 <img className='icon' src= {Logo}/>
                 </NavbarBrand>
                 <Nav>
-                    <NavItem className="navitm menu-itm">00 Home</NavItem>
+                    <NavItem className="navitm menu-itm current">00 Home</NavItem>
                     <NavItem className="navitm menu-itm">01 Destination</NavItem>
                     <NavItem className="navitm menu-itm">02 Crew</NavItem>
-                    <NavItem className="navitm menu-itm">03 Technology</NavItem>
+                    <NavItem className="navitm menu-itm ">03 Technology</NavItem>
                 </Nav>
             </Navbar>
     )
