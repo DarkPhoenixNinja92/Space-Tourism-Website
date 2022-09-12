@@ -1,0 +1,41 @@
+body {
+    background-image: url('../images/destination/background-destination-desktop.jpg');
+}
+
+.data-set,.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.data-set .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left img {
+    position: relative;
+    left: 4vw;
+}
+
+.data-set .right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.data-set .right ul li {
+    margin-right: 1em;
+}
+
+.title {
+    position: relative;
+    margin: 5em;
+    width: 100%;
+}
