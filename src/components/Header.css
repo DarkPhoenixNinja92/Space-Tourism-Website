@@ -1,6 +1,6 @@
 .navitm {
     list-style-type: none;
-    margin-right: 1em;
+    margin-right: 4em;
 }
 
 .nav {
@@ -8,4 +8,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 4000;
+    color: #fff;
+}
+
+.menu-itm {
+    position: relative;
+    left: 32vw;
+}
+
+img {
+    position: relative;
+    right: 35vw;
 }
