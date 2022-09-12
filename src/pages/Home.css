@@ -4,3 +4,20 @@ body {
     background-size: 100vw;
     z-index: 10;
 }
+
+.cover,.explore {
+    z-index: 5000;
+    color: #D0D6F9;
+}
+
+.title {
+    color: #fff;
+}
+
+.explore {
+    border-radius: 50%;
+    color: #000;
+    background-color: #fff;
+    width: 5%;
+    padding: 5em;
+}
