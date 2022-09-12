@@ -10,6 +10,14 @@ body {
     color: #D0D6F9;
 }
 
+.cover {
+    margin-top: 4em;
+}
+
+.travel, .title {
+    text-transform: uppercase;
+}
+
 .title {
     color: #fff;
 }
@@ -20,4 +28,5 @@ body {
     background-color: #fff;
     width: 5%;
     padding: 5em;
+    cursor: pointer;
 }
