@@ -21,3 +21,9 @@ img {
     position: relative;
     right: 35vw;
 }
+
+.icon {
+    position: relative;
+    right: 45vw;
+    top: 2vw;
+}
