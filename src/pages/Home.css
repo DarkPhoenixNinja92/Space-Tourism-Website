@@ -10,6 +10,17 @@ body {
     color: #D0D6F9;
 }
 
+.explore-outer {
+    background-color: #979797;
+    opacity: 15.36%;
+    width: 5%;
+    padding: 10em;
+    border-radius: 50%;
+    position: absolute;
+    left: 77vw;
+    top: 68vh;
+}
+
 .cover {
     margin-top: 4em;
 }
@@ -29,4 +40,11 @@ body {
     width: 5%;
     padding: 5em;
     cursor: pointer;
+    position: absolute;
+    left: 80vw;
+    top: 72vh;
+}
+
+.show {
+    display: inherit;
 }
