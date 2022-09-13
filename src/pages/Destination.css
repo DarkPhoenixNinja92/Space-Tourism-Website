@@ -39,3 +39,33 @@ body {
     margin: 5em;
     width: 100%;
 }
+
+.location-link {
+    position: absolute;
+    top: 27vh;
+    left: 45vw;
+}
+
+.current {
+    position: absolute;
+    right: 10.55em;
+    top: -1em;
+}
+
+.right h2 {
+    position: absolute;
+    font-size: 100px;
+    left: 11em;
+}
+
+.right p {
+    width: 25%;
+    position: absolute;
+    bottom: 48vh;
+    left: 35vw;
+}
+
+.moon {
+    position: absolute;
+    left: 4em;
+}

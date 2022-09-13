@@ -10,11 +10,11 @@ const Destination = () => {
         <img src={Moon}/>
         </div>
         <div className='right'>
-            <ul>
-                <li>Moon</li>
-                <li>Mars</li>
-                <li>Europa</li>
-                <li>Titan</li>
+            <ul className='location-link'>
+                <li className='current'>Moon</li>
+                <li className='inactive'>Mars</li>
+                <li className='inactive'>Europa</li>
+                <li className='inactive'>Titan</li>
             </ul>
             <h2 className='location'>Moon</h2>
             <p className='descr'>
