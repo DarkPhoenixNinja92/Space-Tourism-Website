@@ -15,7 +15,7 @@ nav {
 .nav-control {
   position: absolute;
   z-index: 9000;
-  left: 58vw;
+  right: 0;
   top: 2vh;
   cursor: pointer;
 }
