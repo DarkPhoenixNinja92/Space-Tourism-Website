@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+body {
+  overflow-x: hidden;
+  background: #0B0D17;
+}
+
 nav {
   background: #979797;
   height: 100vh;
@@ -5,6 +13,8 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  transition: ease-in-out 0.5s right;
+  z-index: 9000;
 }
 
 .nav-hide {
@@ -14,8 +24,8 @@ nav {
 
 .nav-control {
   position: absolute;
-  z-index: 9000;
-  right: 0;
+  z-index: 11000;
+  right: 2vw;
   top: 2vh;
   cursor: pointer;
 }
@@ -33,4 +43,81 @@ nav {
 .nav-link {
   color: #fff;
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  left: 1em;
+  top: 0.45em;
+}
+
+/* .home {
+  background-image: url('./img/background-home-mobile.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.title-div {
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  margin-top: 8em;
+}
+
+.title,.txt {
+  color: #D0D6F9;
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  width: 75%;
+}
+
+
+.titleSpan {
+  font-family: 'Bellefair Condensed', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 80px;
+  line-height: 100px;
+}
+
+.txt {
+  text-transform: initial;
+  font-size: 15px;
+  line-height: 25px;
+  width: 72%;
+}
+
+.explore {
+  position: absolute;
+  left: 6em;
+  top: 66vh;
+  font-family: 'Bellefair Condensed', Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
+  color: #0B0D17;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  cursor: pointer;
+  z-index: 2000;
 }
