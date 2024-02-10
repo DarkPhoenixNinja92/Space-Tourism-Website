@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Explore from "./components/Explore";
+import BGImg from './img/background-home-mobile.jpg'
 
 export default function Home() {
   return (
-    <section className="home">
-      {/* <Image src='/./app/img/background-home-mobile.jpg' alt='bg image' width='375' height='812'/> */}
+    <section className="home" style={{backgroundImage: `url(${BGImg})`}}>
       <div className="title-div">
       <h1 className="title">So you want to travel to <span className="titleSpan">space</span></h1>  
       <p className="txt">

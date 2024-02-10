@@ -13,6 +13,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  
   transition: ease-in-out 0.5s right;
   z-index: 9000;
 }
@@ -50,21 +51,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
-.logo {
-  position: relative;
-  left: 1em;
-  top: 0.45em;
-}
-
-/* .home {
-  background-image: url('./img/background-home-mobile.jpg');
-  width: 100%;
-  height: 100vh;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 .title-div {
   color: #fff;
@@ -120,4 +106,111 @@ header {
   padding: 5em;
   cursor: pointer;
   z-index: 2000;
+}
+
+.destination,.crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sub-txt,.travel-txt,.section-title,.crew-member-title,.crew-member-name {
+  font-family: 'Bellefair Condensed', Arial, Helvetica, sans-serif;
+}
+
+.sub-txt,.travel-txt,.active,.section-title {
+  color: #fff;
+}
+
+.destination-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.destination-itm {
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 15px;
+  position: relative;
+  top: 5.5px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.section-txt {
+  width: 80%;
+  text-transform: initial;
+}
+
+.section-txt,.distance,.travel-time,.section-title {
+  position: relative;
+  bottom: 35px;
+}
+
+.section-txt,.distance,.travel-time {
+  bottom: 75px;
+}
+
+.travel-time {
+  bottom: 105px;
+}
+
+.sub-txt,.travel-txt {
+  font-size: 28px;
+}
+
+.destination-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.destination-title span {
+  opacity: 25%;
+}
+
+.section-txt {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #383B4B;
+}
+
+.crew-member-title {
+  opacity: 49.51%;
+  font-size: 22px;
+}
+
+.crew-member-name {
+  font-size: 28px;
+  color: #fff;
+}
+
+.crew-title span {
+  opacity: 25%;
+  margin-right: 15px;
+}
+
+.crew-txt {
+  text-transform: initial;
+  font-size: 18px;
+  width: 85%;
+}
+
+.person {
+  border-top: 2px solid #383B4B;
+  position: relative;
 }
