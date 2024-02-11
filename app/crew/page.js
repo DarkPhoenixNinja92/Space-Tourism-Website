@@ -8,6 +8,13 @@ const Crew = () => {
                 <span>02
                 </span>Meet your crew</h2>
             <Image className='crew-member-img' src={Doug} width='177.12' height='222' alt='Douglas Hurley'/>
+            <div className="img-border">a</div>
+            <div className="crew-btn-div">
+                <button className='crew-btn active-btn'></button>
+                <button className='crew-btn'></button>
+                <button className='crew-btn'></button>
+                <button className='crew-btn'></button>
+            </div>
             <div className="person">
                 <h3 className='crew-member-title'>commander</h3>
                 <p className='crew-member-name'>Douglas Hurley</p>

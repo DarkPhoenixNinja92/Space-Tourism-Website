@@ -1,31 +1,67 @@
+"use client";
+import {useState} from 'react';
+import data from '../data.json';
 import MoonImg from '../img/image-moon.png'
+import MarsImg from '../img/image-mars.png'
+import EuropaImg from '../img/image-europa.png'
+import TitanImg from '../img/image-titan.png'
 import Image from 'next/image';
 
 const Destination = () => {
+    const [destination, setDestination] = useState(data.destinations[0]);
+    const [destinationImg, setDestinationImg] = useState({MoonImg});
     return (
         <section className="destination">
-            <h2 className="destination-title"><span>01 </span>Pick your destination</h2>
-            <Image src={MoonImg} alt="Moon" width='170' height='170'/>
+            <h2 className="destination-title">
+                <span>01
+                </span>Pick your destination</h2>
+            <Image src={destinationImg} alt={destination.name} width='170' height='170'/>
             <ul className='destination-list'>
-                <li className='destination-itm active'>Moon</li>
-                <li className='destination-itm'>Mars</li>
-                <li className='destination-itm'>Europa</li>
-                <li className='destination-itm'>Titan</li>
+                <li
+                    className={`destination-itm ${destination == data.destinations[0]
+                        ? 'active'
+                        : ""}`}
+                    onClick={() => {
+                        setDestination(data.destinations[0]);
+                        setDestinationImg(MoonImg)
+                    }}>Moon</li>
+                <li
+                    className={`destination-itm ${destination == data.destinations[1]
+                        ? 'active'
+                        : ""}`}
+                    onClick={() => {
+                        setDestination(data.destinations[1]);
+                        setDestinationImg(MarsImg)
+                    }}>Mars</li>
+                <li
+                    className={`destination-itm ${destination == data.destinations[2]
+                        ? 'active'
+                        : ""}`}
+                    onClick={() => {
+                        setDestination(data.destinations[2]);
+                        setDestinationImg(EuropaImg)
+                    }}>Europa</li>
+                <li
+                    className={`destination-itm ${destination == data.destinations[3]
+                        ? 'active'
+                        : ""}`}
+                    onClick={() => {
+                        setDestination(data.destinations[3]);
+                        setDestinationImg(TitanImg)
+                    }}>Titan</li>
             </ul>
-            <h2 className="section-title">Moon</h2>
-<p className="section-txt">
-    See our planet as you’ve never seen it before. A perfect relaxing trip away to
-    help regain perspective and come back refreshed. While you’re there, take in
-    some history by visiting the Luna 2 and Apollo 11 landing sites.
-</p>
-<div className="distance">
-    <h3 className="subtitle">Avg. distance</h3>
-<p className="sub-txt">384,400 km</p>
-</div>
-<div className="travel-time">
-    <h3 className="subtitle-travel">Est. travel time</h3>
-    <p className="travel-txt">3 days</p>
-</div>
+            <h2 className="section-title">{destination.name}</h2>
+            <p className="section-txt">
+                {destination.description}
+            </p>
+            <div className="distance">
+                <h3 className="subtitle">Avg. distance</h3>
+                <p className="sub-txt">{destination.distance}</p>
+            </div>
+            <div className="travel-time">
+                <h3 className="subtitle-travel">Est. travel time</h3>
+                <p className="travel-txt">{destination.travel}</p>
+            </div>
         </section>
     );
 }
