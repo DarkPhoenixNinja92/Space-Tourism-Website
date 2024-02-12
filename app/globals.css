@@ -228,7 +228,7 @@ header {
   cursor: pointer;
 }
 
-.crew-btn:first-of-type {
+.active-btn {
   opacity: 100%;
 }
 
