@@ -247,3 +247,33 @@ header {
   color: #0B0D17;
   background: #fff;
 }
+
+@media (min-width: 768px) {
+
+  .nav-hide,.nav-link {
+    height: 96px;
+    width: 450px;
+  }
+
+  .nav-hide {
+    right: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -4vh;
+    left: 0;
+  }
+
+  .nav-control {
+    display: none;
+  }
+
+  .nav-itm {
+    margin-right: 10px;
+  }
+}
