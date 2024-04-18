@@ -4,7 +4,7 @@ import BGImg from './img/background-home-mobile.jpg'
 
 export default function Home() {
   return (
-    <section className="home" style={{backgroundImage: `url(${BGImg})`}}>
+    <section className="home" id="homepage" style={{backgroundImage: `url(${BGImg})`}}>
       <div className="title-div">
       <h1 className="title">So you want to travel to <span className="titleSpan">space</span></h1>  
       <p className="txt">

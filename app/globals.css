@@ -91,8 +91,8 @@ header {
 
 .explore {
   position: absolute;
-  left: 6em;
-  top: 66vh;
+  left: 8em;
+  top: 72vh;
   font-family: 'Bellefair Condensed', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   color: #0B0D17;
@@ -103,7 +103,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 5em;
+  padding: 3.55em;
   cursor: pointer;
   z-index: 2000;
 }
@@ -275,5 +275,18 @@ header {
 
   .nav-itm {
     margin-right: 10px;
+  }
+
+  #logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .home,#homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
   }
 }
